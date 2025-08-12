@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: auth_db          # نام دیتابیس اولیه
+      POSTGRES_USER: auth           # کاربر
+      POSTGRES_PASSWORD: authpass   # پسورد
+    ports:
+      - "5432:5432"                 # HOST:CONTAINER
+    volumes:
+      - pgdata:/var/lib/postgresql/data  # پایدارسازی داده‌ها
+
+volumes:
+  pgdata:
