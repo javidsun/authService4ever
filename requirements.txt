@@ -7,5 +7,4 @@ passlib[bcrypt]
 sqlalchemy>=2
 alembic~=1.16.4
 psycopg2-binary
-
 pydantic-settings~=2.10.1
